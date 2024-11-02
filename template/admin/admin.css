@@ -33,10 +33,12 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1;
+  background-color: #b5c2ca;
 }
 .container {
   display: flex;
   justify-content: space-between;
+  gap: 20px;
   width: 100%;
   height: 100vh;
 }
@@ -108,5 +110,42 @@ hr.solid {
   font-weight: bold;
 }
 .profile .email {
+  color: #9ca2aa;
+}
+.right {
+  flex: 1;
+  padding-right: 20px;
+}
+.right .navbar {
+  width: 100%;
+  height: 80px;
+  background-color: white;
+  margin-top: 20px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+}
+.right .navbar .input-search {
+  position: relative;
+}
+.right .navbar .input-search input {
+  width: 600px;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #f0f3f4;
+  border-radius: 24px;
+}
+.right .navbar .input-search i {
+  font-size: 20px;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+}
+.right .navbar .date {
   color: #9ca2aa;
 }
