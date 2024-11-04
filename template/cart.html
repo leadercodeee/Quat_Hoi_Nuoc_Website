@@ -17,6 +17,7 @@
   <meta name="keywords" content="bootstrap, bootstrap4" />
 
 		<!-- Bootstrap CSS -->
+	<link rel ="stylesheet" href="css/cart.css">
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 		<link href="css/tiny-slider.css" rel="stylesheet">
@@ -77,227 +78,98 @@
 		<!-----------------cart---------------------->
 		<section class="cart">
 			<div class = "container">
+				<div class = "cart-top-wrap">
 				<div class = "cart-top">
-					<div class = cart-top-cart>
+					<div class = "cart-top-cart cart-top-item">
 						<i class="fa-solid fa-cart-shopping"></i>
 					</div>
 
-					<div class = cart-top-cart>
+					<div class = "cart-top-address cart-top-item">
 						<i class="fa-solid fa-location-dot"></i>
 					</div>
 
-					<div class = cart-top-cart>
-						<i class="fa-light fa-money-check"></i>
+					<div class = "cart-top-payment cart-top-item">
+						<i class="fa-solid fa-money-check"></i>
 					</div>
 
 				</div>
 			</div>
+			</div>
 
-			<div class = "container">
-				<div class = "cart-content">
-					<div class = "cart-content-left">
-						<table>
-							<tr>
-								<th class="product-name">Ảnh</th>
-								<th class="product-name">Sản Phẩm</th>
-								<th class="product-price">Giá</th>
-								<th class="product-quantity">Số Lượng</th>
-								<th class="product-total">Tổng</th>
-							</tr>
-							<tr>
-								<td><img src="images/bag.svg" alt="">
-								<td><p>Sản phẩm 1</p></td>
-								<td><p>500.000<sub>VNĐ</sub></p></td>
-								<td><input type = "number" value="1" min="1"></td>
-								<td><span>x</span></td>
-
-
-							</tr>
-
-
-
-						</table>
-
-					</div>
-
-					<div class = "cart-content-right">
-						<table>
-							<tr>
-								<th colspan="2">TỔNG TIỀN GIỎ HÀNG</th>
-							</tr>
-
-							<tr>
-								<td>TỔNG SẢN PHẨM</td>
-								<td>2</td>
-							</tr>
-							<tr>
-								<td>TỔNG TIỀN HÀNG</td>
-								<td><p>500.000<sub>VNĐ</sub></p></td>
-							</tr>
-							<tr>
-								<td>THÀNH TIỀN</td>
-								<td><p style="color : black ; font-weight: bold">500.000<sub>VNĐ</sub></p></td>
-							</tr>
-
-						</table>
-						<div class="cart-content-right-text">
-							<p>Bạn sẽ được miễn phí ship khi đơn hàng có tổng giá trị trên 5.000.000</p>
-							<p style="color:red ; font-weight: bold">Mua thêm <span style="font-size: 18px">1.000.000</span> sẽ được miễn phí SHIP</p>
-						</div>
-
-						<div class = "cart-content-right-button">
-							<button>TIẾP TỤC MUA HÀNG</button>
-							<button>THANH TOÁN</button>
-						</div>
-
-						<div class="cart-content-right-login">
-							<p>TÀI KHOẢN TV</p>
-							<p>Hãy<a href="">Đăng nhập</a>tài khoản của bạn để tích điển thành viên</p>
-
-						</div>
-
-
-
-
-					</div>
-
+            <div class = "container">
+			<div class="cart-content" style="display: flex; gap: 20px;">
+				<!-- Cột trái -->
+				<div class="cart-content-left" style="flex: 1; max-width: 70%;">
+					<table>
+						<tr>
+							<th class="product-name">Ảnh</th>
+							<th class="product-name">Sản Phẩm</th>
+							<th class="product-name">Màu</th>
+							<th class="product-price">Giá</th>
+							<th class="product-quantity">Số Lượng</th>
+							<th class="product-total">Xóa</th>
+						</tr>
+						<tr>
+							<td><img src="images/bag.svg" alt=""></td>
+							<td><p>Sản phẩm 1</p></td>
+							<td><img src="" alt=""></td>
+							<td><p>500.000<sup>VNĐ</sup></p></td>
+							<td><input type="number" value="1" min="1"></td>
+							<td><span>x</span></td>
+						</tr>
+						<tr>
+							<td><img src="images/bag.svg" alt=""></td>
+							<td><p>Sản phẩm 2</p></td>
+							<td><img src="" alt=""></td>
+							<td><p>500.000<sup>VNĐ</sup></p></td>
+							<td><input type="number" value="1" min="1"></td>
+							<td><span>x</span></td>
+						</tr>
+					</table>
 				</div>
 
+				<!-- Cột phải -->
+				<div class="cart-content-right" style="flex: 1; max-width: 30%;">
+					<table>
+						<tr>
+							<th colspan="2">TỔNG TIỀN GIỎ HÀNG</th>
+						</tr>
+						<tr>
+							<td>TỔNG SẢN PHẨM</td>
+							<td>2</td>
+						</tr>
+						<tr>
+							<td>TỔNG TIỀN HÀNG</td>
+							<td><p>500.000<sup>VNĐ</sup></p></td>
+						</tr>
+						<tr>
+							<td>TẠM TÍNH</td>
+							<td><p style="color: black; font-weight: bold">500.000<sup>VNĐ</sup></p></td>
+						</tr>
+					</table>
+
+					<div class="cart-content-right-text">
+						<p>Bạn sẽ được miễn phí ship khi đơn hàng có tổng giá trị trên 5.000.000</p>
+						<p style="color: red; font-weight: bold">Mua thêm <span style="font-size: 18px">1.000.000</span> sẽ được miễn phí SHIP</p>
+					</div>
+
+					<div class="cart-content-right-button">
+						<button>TIẾP TỤC MUA HÀNG</button>
+						<button>THANH TOÁN</button>
+					</div>
+
+					<div class="cart-content-right-login">
+						<p>TÀI KHOẢN TV</p>
+						<p>Hãy <a href="">Đăng nhập</a> tài khoản của bạn để tích điểm thành viên</p>
+					</div>
+				</div>
 			</div>
+			</div>
+
 
 		</section>
 
-		
-
-		<div class="untree_co-section before-footer-section">
-            <div class="container">
-              <div class="row mb-5">
-                <form class="col-md-12" method="post">
-                  <div class="site-blocks-table">
-                    <table class="table">
-                      <thead>
-                        <tr>
-                          <th class="product-thumbnail">Image</th>
-                          <th class="product-name">Product</th>
-                          <th class="product-price">Price</th>
-                          <th class="product-quantity">Quantity</th>
-                          <th class="product-total">Total</th>
-                          <th class="product-remove">Remove</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td class="product-thumbnail">
-                            <img src="images/product-1.png" alt="Image" class="img-fluid">
-                          </td>
-                          <td class="product-name">
-                            <h2 class="h5 text-black">Product 1</h2>
-                          </td>
-                          <td>$49.00</td>
-                          <td>
-                            <div class="input-group mb-3 d-flex align-items-center quantity-container" style="max-width: 120px;">
-                              <div class="input-group-prepend">
-                                <button class="btn btn-outline-black decrease" type="button">&minus;</button>
-                              </div>
-                              <input type="text" class="form-control text-center quantity-amount" value="1" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
-                              <div class="input-group-append">
-                                <button class="btn btn-outline-black increase" type="button">&plus;</button>
-                              </div>
-                            </div>
-
-                          </td>
-                          <td>$49.00</td>
-                          <td><a href="#" class="btn btn-black btn-sm">X</a></td>
-                        </tr>
-
-                        <tr>
-                          <td class="product-thumbnail">
-                            <img src="images/product-2.png" alt="Image" class="img-fluid">
-                          </td>
-                          <td class="product-name">
-                            <h2 class="h5 text-black">Product 2</h2>
-                          </td>
-                          <td>$49.00</td>
-                          <td>
-                            <div class="input-group mb-3 d-flex align-items-center quantity-container" style="max-width: 120px;">
-                              <div class="input-group-prepend">
-                                <button class="btn btn-outline-black decrease" type="button">&minus;</button>
-                              </div>
-                              <input type="text" class="form-control text-center quantity-amount" value="1" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
-                              <div class="input-group-append">
-                                <button class="btn btn-outline-black increase" type="button">&plus;</button>
-                              </div>
-                            </div>
-
-                          </td>
-                          <td>$49.00</td>
-                          <td><a href="#" class="btn btn-black btn-sm">X</a></td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </form>
-              </div>
-
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="row mb-5">
-                    <div class="col-md-6 mb-3 mb-md-0">
-                      <button class="btn btn-black btn-sm btn-block">Update Cart</button>
-                    </div>
-                    <div class="col-md-6">
-                      <button class="btn btn-outline-black btn-sm btn-block">Continue Shopping</button>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-12">
-                      <label class="text-black h4" for="coupon">Coupon</label>
-                      <p>Enter your coupon code if you have one.</p>
-                    </div>
-                    <div class="col-md-8 mb-3 mb-md-0">
-                      <input type="text" class="form-control py-3" id="coupon" placeholder="Coupon Code">
-                    </div>
-                    <div class="col-md-4">
-                      <button class="btn btn-black">Apply Coupon</button>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6 pl-5">
-                  <div class="row justify-content-end">
-                    <div class="col-md-7">
-                      <div class="row">
-                        <div class="col-md-12 text-right border-bottom mb-5">
-                          <h3 class="text-black h4 text-uppercase">Cart Totals</h3>
-                        </div>
-                      </div>
-                      <div class="row mb-3">
-                        <div class="col-md-6">
-                          <span class="text-black">Subtotal</span>
-                        </div>
-                        <div class="col-md-6 text-right">
-                          <strong class="text-black">$230.00</strong>
-                        </div>
-                      </div>
-                      <div class="row mb-5">
-                        <div class="col-md-6">
-                          <span class="text-black">Total</span>
-                        </div>
-                        <div class="col-md-6 text-right">
-                          <strong class="text-black">$230.00</strong>
-                        </div>
-                      </div>
-
-                      <div class="row">
-                        <div class="col-md-12">
-                          <button class="btn btn-black btn-lg py-3 btn-block" onclick="window.location='checkout.html'">Proceed To Checkout</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+		<!-----------------End Cart---------------------->
 
 
 		<!-- Start Footer Section -->
