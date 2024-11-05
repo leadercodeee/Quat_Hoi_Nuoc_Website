@@ -19,51 +19,6 @@
       <div class="left">
         <!-- Sidebar -->
         <!-- logo -->
-        <div class="logo">
-          <img src="../images/logo.png" alt="logo" />
-          <span>Furni</span>
-        </div>
-        <!-- Divider -->
-        <hr class="solid" />
-        <!-- list item -->
-        <div class="list-navbar">
-          <ul class="list-item">
-            <li class="item active">
-              <i class="fa-solid fa-fan"></i>
-              <a style="color: white" href="#"> Quản lý sản phẩm</a>
-            </li>
-            <li class="item">
-              <i class="fa-solid fa-layer-group"></i>
-              <a> Quản lý danh mục</a>
-            </li>
-            <li class="item">
-              <i class="fa-solid fa-table-list"></i>
-              <a href="userManagement.html"> Quản lý người dùng</a>
-            </li>
-            <li class="item">
-              <i class="fa-solid fa-gift"></i>
-              <a> Quản lý đơn hàng</a>
-            </li>
-          </ul>
-        </div>
-        <!-- profile -->
-        <div class="profile">
-          <div class="avatar">
-            <img
-              src="https://png.pngtree.com/png-vector/20240724/ourlarge/pngtree-administrator-admin-avatar-png-image_12853673.png"
-              alt="avatar"
-            />
-          </div>
-          <p class="name">Emily Jonson</p>
-          <span class="email">emilyjonson@gmail.com</span>
-        </div>
-        <!-- logout -->
-        <ul class="list-item">
-          <li class="item">
-            <i class="fa-solid fa-right-from-bracket"></i>
-            Đăng xuất
-          </li>
-        </ul>
       </div>
       <!-- Right -->
       <div class="right">
@@ -237,6 +192,11 @@
       </div>
     </div>
   </body>
-  <!-- <script src="common/sidebar.js"></script> -->
+  <script src="common/sidebar.js"></script>
   <script src="common/navbar.js"></script>
+  <script type="module">
+    import activeElement from "./common/common.js"
+    const element = document.getElementById("item-product")
+    activeElement(element)
+  </script>
 </html>

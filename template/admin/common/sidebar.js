@@ -11,21 +11,21 @@ sidebar.innerHTML = `
         <!-- list item -->
         <div class="list-navbar">
           <ul class="list-item">
-            <li class="item">
+            <li class="item" id= "item-product">
               <i class="fa-solid fa-fan"></i>
-              Quản lý sản phẩm
+              <a href ="admin.html">    Quản lý sản phẩm</a>
             </li>
             <li class="item">
               <i class="fa-solid fa-layer-group"></i>
-              Quản lý danh mục
+         <a>Quản lý danh mục</a>
             </li>
-            <li class="item">
+            <li class="item"p id = "item-user">
               <i class="fa-solid fa-table-list"></i>
-              Quản lý người dùng
+     <a href ="userManagement.html">         Quản lý người dùng</a>
             </li>
             <li class="item">
               <i class="fa-solid fa-gift"></i>
-              Quản lý đơn hàng
+          <a>    Quản lý đơn hàng</a>
             </li>
           </ul>
         </div>
