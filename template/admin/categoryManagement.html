@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesheet/userManagement.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Left -->
+      <div class="left">
+        <!-- Sidebar -->
+        <!-- logo -->
+      </div>
+      <!-- Right -->
+      <div class="right">
+        <!-- Navbar -->
+        <div class="navbar">
+          <!-- Search -->
+        </div>
+        <!-- Content -->
+        <div class="content">
+          <h2 style="font-size: 30px; font-weight: bold; margin-bottom: 40px;">Quản lý danh mục</h2>
+          <div class="tablef-container">
+            <table>
+              <thead>
+                <tr>
+                  <th>Mã danh mục</th>
+                  <th style="width: 20%">Tên danh mục</th>
+                  <th>Mô tả</th>
+                  <th style="width: 20%">Trạng thái</th>
+                  <th>Thao tác</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>
+                    Quạt hơi nước mini
+                  </td>
+                  <td>Đây là mô tả</td>
+                  <td>Đây là trạng thái</td>
+         
+                  <td style="cursor: pointer">
+                    <i style="margin: 0 10px" class="fa-solid fa-trash"></i>
+                    <i class="fa-solid fa-pen"></i>
+                  </td>
+          
+                  </tr>
+                <tr>
+                  <td>1</td>
+                  <td>
+                    Quạt hơi nước mini
+                  </td>
+                  <td>Đây là mô tả</td>
+                  <td>Đây là trạng thái</td>
+         
+                  <td style="cursor: pointer">
+                    <i style="margin: 0 10px" class="fa-solid fa-trash"></i>
+                    <i class="fa-solid fa-pen"></i>
+                  </td>
+          
+                  </tr>
+                <tr>
+                  <td>1</td>
+                  <td>
+                    Quạt hơi nước mini
+                  </td>
+                  <td>Đây là mô tả</td>
+                  <td>Đây là trạng thái</td>
+         
+                  <td style="cursor: pointer">
+                    <i style="margin: 0 10px" class="fa-solid fa-trash"></i>
+                    <i class="fa-solid fa-pen"></i>
+                  </td>
+          
+                  </tr>
+                <tr>
+                  <td>1</td>
+                  <td>
+                    Quạt hơi nước mini
+                  </td>
+                  <td>Đây là mô tả</td>
+                  <td>Đây là trạng thái</td>
+         
+                  <td style="cursor: pointer">
+                    <i style="margin: 0 10px" class="fa-solid fa-trash"></i>
+                    <i class="fa-solid fa-pen"></i>
+                  </td>
+          
+                  </tr>
+               
+
+                <!-- Thêm nhiều hàng dữ liệu tại đây -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+  </body>
+  <script src="common/sidebar.js"></script>
+  <script src="common/navbar.js"></script>
+  <script type="module">
+    import activeElement from "./common/common.js"
+    const element = document.getElementById("item-category")
+    activeElement(element)
+  </script>
+</html>

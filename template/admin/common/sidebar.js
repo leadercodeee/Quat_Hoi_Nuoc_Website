@@ -15,9 +15,9 @@ sidebar.innerHTML = `
               <i class="fa-solid fa-fan"></i>
               <a href ="admin.html">    Quản lý sản phẩm</a>
             </li>
-            <li class="item">
+            <li class="item" id ="item-category">
               <i class="fa-solid fa-layer-group"></i>
-         <a>Quản lý danh mục</a>
+         <a href = "categoryManagement.html">Quản lý danh mục</a>
             </li>
             <li class="item"p id = "item-user">
               <i class="fa-solid fa-table-list"></i>
