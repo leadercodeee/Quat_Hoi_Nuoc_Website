@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chỉnh Sửa Trang Cá Nhân</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Chỉnh Sửa Trang Cá Nhân</h2>
+        <form id="profileForm">
+            <label for="avatar">Ảnh Đại Diện</label>
+            <label for="avatarInput" class="avatar-label">
+                <img id="avatarPreview" src="default-avatar.png" alt="Ảnh đại diện" />
+            </label>
+            <input type="file" id="avatarInput" name="avatar" accept="image/*" style="display: none;">
+
+            <label for="Address">Địa chỉ</label>
+            <input type="text" id="Address" Address="Address" required placeholder="Nhập địa chỉ bạn">
+
+            <label for="name">Họ và Tên</label>
+            <input type="text" id="name" name="name" required placeholder="Nhập tên của bạn">
+
+            <label for="email">Địa chỉ Email</label>
+            <input type="email" id="email" name="email" required placeholder="Nhập email của bạn">
+
+            <label for="password">Mật Khẩu Mới</label>
+            <input type="password" id="password" name="password" placeholder="Nhập mật khẩu mới">
+
+            <label for="acceptTerms">
+                <input type="checkbox" id="acceptTerms" name="acceptTerms" required>
+                Tôi đồng ý với các <a href="#">Điều khoản và Điều kiện</a>
+            </label>
+
+            <button type="submit" id="submitButton" disabled>Lưu Thay Đổi</button>
+        </form>
+        <p id="confirmationMessage" class="hidden">Thông tin đã được cập nhật!</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
