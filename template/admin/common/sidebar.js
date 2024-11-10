@@ -13,19 +13,19 @@ sidebar.innerHTML = `
           <ul class="list-item">
             <li class="item" id= "item-product">
               <i class="fa-solid fa-fan"></i>
-              <a href ="admin.html">    Quản lý sản phẩm</a>
+              <a href ="admin.html">Quản lý sản phẩm</a>
             </li>
             <li class="item" id ="item-category">
               <i class="fa-solid fa-layer-group"></i>
-         <a href = "categoryManagement.html">Quản lý danh mục</a>
+              <a href = "categoryManagement.html">Quản lý danh mục</a>
             </li>
             <li class="item"p id = "item-user">
               <i class="fa-solid fa-table-list"></i>
-     <a href ="userManagement.html">         Quản lý người dùng</a>
+                <a href ="userManagement.html">Quản lý người dùng</a>
             </li>
-            <li class="item">
+            <li class="item" id ="item-order">
               <i class="fa-solid fa-gift"></i>
-          <a>    Quản lý đơn hàng</a>
+              <a href = "orderManagement.html">Quản lý đơn hàng</a>
             </li>
           </ul>
         </div>
