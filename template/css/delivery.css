@@ -164,53 +164,6 @@
     margin-bottom: 16px;
 }
 
-/* Căn chỉnh dòng có biểu tượng */
-.row {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    padding: 10px 0;
-    border-bottom: 1px solid #ddd;
-}
-
-.row:last-child {
-    border-bottom: none; /* Loại bỏ đường viền cuối */
-}
-
-/* Biểu tượng màu sắc nổi bật */
-.row i {
-    font-size: 20px;
-    color: #0dcaf0; /* Màu sắc phù hợp với thương hiệu hoặc phong cách */
-}
-
-/* Văn bản căn chỉnh và định dạng */
-.row p {
-    font-family: Arial, sans-serif;
-    font-size: 15px;
-    font-weight: normal;
-    color: #555;
-    margin: 0;
-}
-
-/* Phong cách riêng cho văn bản in đậm */
-.row p span {
-    font-weight: bold;
-    color: #333;
-}
-
-/* Điều chỉnh radio button cho đẹp */
-.delivery-content-left input[type="radio"] {
-    width: 18px;
-    height: 18px;
-    accent-color: #0dcaf0; /* Màu sắc của radio button */
-    cursor: pointer;
-}
-
-/* Thêm hiệu ứng hover */
-.row:hover {
-    background-color: #eef7ff;
-    transition: background-color 0.3s ease;
-}
 
 
 
