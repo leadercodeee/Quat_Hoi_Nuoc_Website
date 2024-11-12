@@ -4,17 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chỉnh Sửa Trang Cá Nhân</title>
-    <link rel="stylesheet" href="../template/css/style2.css">
+    <link rel="stylesheet" href="../template/css/style1.css">
 </head>
 <body>
     <div class="container">
         <h2>Chỉnh Sửa Trang Cá Nhân</h2>
         <form id="profileForm">
-            <label for="avatar">Ảnh Đại Diện</label>
-            <label for="avatarInput" class="avatar-label">
-                <img id="avatarPreview" src="default-avatar.png" alt="Ảnh đại diện" />
-            </label>
-            <input type="file" id="avatarInput" name="avatar" accept="image/*" style="display: none;">
+            <div class="avatar-container">
+                <img class="avatar-image" src="https://scontent.fhan3-5.fna.fbcdn.net/v/t1.30497-1/453178253_471506465671661_2781666950760530985_n.png?stp=dst-png_s200x200&amp;_nc_cat=1&amp;ccb=1-7&amp;_nc_sid=136b72&amp;_nc_eui2=AeH8b1t6EjqBK4ZqWURuejZ9Wt9TLzuBU1Ba31MvO4FTUMXeuy_DiwiijObD_ZdfOpJ5D5GAugvewSumt3igTvlN&amp;_nc_ohc=BhetV2EUtAIQ7kNvgE5tFG9&amp;_nc_zt=24&amp;_nc_ht=scontent.fhan3-5.fna&amp;_nc_gid=ArM3RxrBHfSfkEtc2_wz0WY&amp;oh=00_AYCRVUYsvMZvCuu6MgKzA68Oe4eUvXAehY5pSLJB6ygzHA&amp;oe=675A6C7A" alt="Avatar">
+                <button type="button" class="camera-button">📷</button>
+            </div>
 
             <label for="Address">Địa chỉ</label>
             <input type="text" id="Address" Address="Address" required placeholder="Nhập địa chỉ bạn">
@@ -38,6 +37,6 @@
         <p id="confirmationMessage" class="hidden">Thông tin đã được cập nhật!</p>
     </div>
 
-    <script src="script.js"></script>
+    <script src="../template/js/script.js"></script>
 </body>
 </html>
