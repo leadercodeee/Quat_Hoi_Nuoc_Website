@@ -97,5 +97,38 @@
     width: 100px;
     height: 50px;
 }
+.payment-content-right-bottom{
+    padding-left: 12px;
+    border-left: 2px solid #dddddd;
+    height: auto;
+}
+.payment-content-right-bottom table {
+    width: 100%;
+    font-family: var(--main-text-font);
+    font-size: 12px;
+    text-align: center;
+}
+.payment-content-right-bottom table tr th:first-child{
+    text-align: left;
+}
+.payment-content-right-bottom table tr th{
+    padding-bottom: 12px;
+    border-bottom: 2px solid #dddddd;
+}
+.payment-content-right-bottom table tr th:last-child {
+    text-align: right;
+}
+.payment-content-right-bottom table tr td{
+    padding : 6px 0;
+}
+.payment-content-right-bottom table tr:nth-child(4){
+    border-top: 2px solid #dddddd;
+}
+.payment-content-right-bottom table tr td:last-child{
+    text-align: right;
+}
+.payment-content-right-bottom table tr td:first-child{
+    text-align: left;
+}
 
 
