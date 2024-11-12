@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detail page</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link href="css/tiny-slider.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+
+    .product-detail-container {
+      display: flex;
+      justify-content: space-around;
+      padding: 20px;
+    }
+
+    .product-slider {
+      width: 50%;
+      position: relative;
+      max-width: 500px;
+    }
+
+    .slider-image {
+      width: 100%;
+      height: auto;
+      display: none;
+    }
+
+    .slider-image:first-child {
+      display: block;
+    }
+
+    .prev,
+    .next {
+      position: absolute;
+      top: 50%;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      border: none;
+      font-size: 30px;
+      padding: 10px;
+      cursor: pointer;
+      transform: translateY(-50%);
+    }
+
+    .prev {
+      left: 10px;
+    }
+
+    .next {
+      right: 10px;
+    }
+
+    /* Phần thông tin sản phẩm */
+    .product-info {
+      width: 40%;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+
+    .product-title {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .product-price {
+      font-size: 20px;
+      color: #ff5722;
+      margin-bottom: 20px;
+    }
+
+    .product-description {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    .add-to-cart {
+      display: flex;
+      justify-content: center;
+    }
+
+    .btn-add-to-cart {
+      background-color: #3b5d50;
+      color: white;
+      padding: 10px 20px;
+      font-size: 18px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .btn-add-to-cart:hover {
+      background-color: #35463f;
+    }
+    .list-img {
+      margin-top: 20px;
+      display: flex;
+      gap: 20px;
+      cursor: pointer;
+    }
+    .image {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+    }
+  </style>
+  <body>
+    <div class="header"></div>
+    <div class="product-detail-container">
+      <!-- Phần slider hình ảnh sản phẩm -->
+      <div class="product-slider">
+        <div class="slider">
+          <img
+            src="https://cdn.tgdd.vn/Products/Images/7498/320997/quat-dieu-hoa-daikiosan-dm103-0-700x467.jpg"
+            alt="Sản phẩm 1"
+            class="slider-image"
+          />
+          <img
+            src="https://cdn.tgdd.vn/Products/Images/7498/320997/quat-dieu-hoa-daikiosan-dm103-4-700x467.jpg"
+            alt="Sản phẩm 2"
+            class="slider-image"
+          />
+          <img
+            src="https://cdn.tgdd.vn/Products/Images/7498/320997/quat-dieu-hoa-daikiosan-dm103-2-700x467.jpg"
+            alt="Sản phẩm 3"
+            class="slider-image"
+          />
+          <div class="list-img">
+            <img
+              src="https://cdn.tgdd.vn/Products/Images/7498/320997/quat-dieu-hoa-daikiosan-dm103-0-700x467.jpg"
+              alt="Sản phẩm 3"
+              class="image"
+            />
+            <img
+              src="https://cdn.tgdd.vn/Products/Images/7498/320997/quat-dieu-hoa-daikiosan-dm103-4-700x467.jpg"
+              alt="Sản phẩm 3"
+              class="image"
+            />
+            <img
+              src="https://cdn.tgdd.vn/Products/Images/7498/320997/quat-dieu-hoa-daikiosan-dm103-2-700x467.jpg"
+              alt="Sản phẩm 3"
+              class="image"
+            />
+          </div>
+        </div>
+        <!-- Các nút điều khiển slider -->
+        <button class="prev" onclick="moveSlide(-1)">❮</button>
+        <button class="next" onclick="moveSlide(1)">❯</button>
+      </div>
+
+      <!-- Thông tin sản phẩm -->
+      <div class="product-info">
+        <h1 class="product-title">Quạt điều hoà Daikiosan DM103 175W</h1>
+        <p class="product-price" style="color: gray; font-weight: bold">
+          Giá: 2.000.000 VND
+        </p>
+        <div class="product-description" style="margin-bottom: 40px">
+          <ul class="list-desc">
+            <span style="font-size: 30px; color: black">Mô tả</span>
+            <li>
+              Thiết kế hiện đại, bình chứa nước 72 lít, có bánh xe di chuyển dễ
+              dàng.
+            </li>
+            <li>Công suất 175W phù hợp làm mát cho phòng từ 45 - 55m2.</li>
+            <li>Đi kèm 2 đá khô hỗ trợ làm mát nhanh chóng.</li>
+            <li>
+              Chế độ gió thường cùng 3 tốc độ gió, tùy chỉnh theo nhu cầu sử
+              dụng.
+            </li>
+            <li>Bảng điều khiển núm xoay dễ dàng thao tác và sử dụng.</li>
+            <li>Thương hiệu Daikiosan - Việt Nam, sản xuất tại Trung Quốc.</li>
+          </ul>
+        </div>
+
+        <!-- Thêm vào giỏ hàng -->
+        <div class="add-to-cart">
+          <button class="btn-add-to-cart">
+            <a href="cart.html" style="text-decoration: none; color: white"
+              >Thêm vào giỏ hàng</a
+            >
+          </button>
+        </div>
+      </div>
+    </div>
+    <footer class="footer-section"></footer>
+  </body>
+  <script src="js/header.js"></script>
+  <script src="js/footer.js"></script>
+  <script>
+    let currentSlide = 0
+    const images = document.querySelectorAll(".image")
+    const imagesArray = Array.from(images)
+    function showSlide(index) {
+      const slides = document.querySelectorAll(".slider-image")
+      if (index >= slides.length) {
+        currentSlide = 0
+      } else if (index < 0) {
+        currentSlide = slides.length - 1
+      } else {
+        currentSlide = index
+      }
+
+      // Ẩn tất cả các slide
+      slides.forEach((slide) => (slide.style.display = "none"))
+      imagesArray.forEach((img) => (img.style.border = "0"))
+      imagesArray[currentSlide].style.border = "2px solid #5dad8c"
+      // Hiển thị slide hiện tại
+      slides[currentSlide].style.display = "block"
+    }
+
+    const activeImg = () => {
+      let currentIndex = 0
+      imagesArray.map((img, index) => {
+        img.onclick = () => {
+          if (currentIndex !== index) {
+            currentIndex = index
+          }
+          imagesArray.forEach((img) => (img.style.border = "0"))
+          imagesArray[currentIndex].style.border = "2px solid #5dad8c"
+          showSlide(index)
+        }
+      })
+    }
+    activeImg()
+    function moveSlide(step) {
+      showSlide(currentSlide + step)
+    }
+
+    // Hiển thị slide đầu tiên khi tải trang
+    document.addEventListener("DOMContentLoaded", () => {
+      showSlide(currentSlide)
+    })
+  </script>
+</html>
