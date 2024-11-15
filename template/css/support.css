@@ -1,0 +1,135 @@
+
+/* Định dạng chung cho trang */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Header */
+.header {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px 8px 0 0;
+}
+
+.header h1 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Nội dung chính */
+.main-content {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    max-width: 800px;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: -10px;
+}
+
+/* Phần giới thiệu hỗ trợ */
+.support-section {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.support-section h2 {
+    font-size: 22px;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.support-section p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Các liên kết hỗ trợ */
+.support-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.support-link {
+    flex: 1 1 45%;
+    max-width: 200px;
+    padding: 15px;
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.support-link:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+}
+
+/* Các phần khác trong trang hỗ trợ */
+.faq-section, .contact-section, .livechat-section, .knowledgebase-section {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.faq-section h3, .contact-section h3, .livechat-section h3, .knowledgebase-section h3 {
+    font-size: 20px;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.faq-section p, .contact-section p, .livechat-section p, .knowledgebase-section p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Liên hệ - danh sách liên hệ */
+.contact-section ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.contact-section li {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+/* Footer */
+.footer {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    color: #777;
+    border-radius: 0 0 8px 8px;
+    margin-top: 20px;
+}
