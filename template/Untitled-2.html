@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chỉnh Sửa Trang Cá Nhân</title>
+    <link rel="stylesheet" href="../template/css/style1.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Chỉnh Sửa Trang Cá Nhân</h2>
+        <form id="profileForm">
+            <div class="avatar-container">
+                <img class="avatar-image" src="https://scontent.fhan3-5.fna.fbcdn.net/v/t1.30497-1/453178253_471506465671661_2781666950760530985_n.png?stp=dst-png_s200x200&amp;_nc_cat=1&amp;ccb=1-7&amp;_nc_sid=136b72&amp;_nc_eui2=AeH8b1t6EjqBK4ZqWURuejZ9Wt9TLzuBU1Ba31MvO4FTUMXeuy_DiwiijObD_ZdfOpJ5D5GAugvewSumt3igTvlN&amp;_nc_ohc=BhetV2EUtAIQ7kNvgE5tFG9&amp;_nc_zt=24&amp;_nc_ht=scontent.fhan3-5.fna&amp;_nc_gid=ArM3RxrBHfSfkEtc2_wz0WY&amp;oh=00_AYCRVUYsvMZvCuu6MgKzA68Oe4eUvXAehY5pSLJB6ygzHA&amp;oe=675A6C7A" alt="Avatar">
+                <button type="button" class="camera-button">📷</button>
+            </div>
+
+            <label for="Address">Địa chỉ</label>
+            <input type="text" id="Address" Address="Address" required placeholder="Nhập địa chỉ bạn">
+
+            <label for="name">Họ và Tên</label>
+            <input type="text" id="name" name="name" required placeholder="Nhập tên của bạn">
+
+            <label for="email">Địa chỉ Email</label>
+            <input type="email" id="email" name="email" required placeholder="Nhập email của bạn">
+
+            <label for="password">Mật Khẩu Mới</label>
+            <input type="password" id="password" name="password" placeholder="Nhập mật khẩu mới">
+
+            <label for="acceptTerms">
+                <input type="checkbox" id="acceptTerms" name="acceptTerms" required>
+                Tôi đồng ý với các <a href="#">Điều khoản và Điều kiện</a>
+            </label>
+
+            <button type="submit" id="submitButton" disabled>Lưu Thay Đổi</button>
+        </form>
+        <p id="confirmationMessage" class="hidden">Thông tin đã được cập nhật!</p>
+    </div>
+
+    <script src="../template/js/script.js"></script>
+</body>
+</html>
