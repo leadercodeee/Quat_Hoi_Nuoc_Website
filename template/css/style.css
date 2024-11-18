@@ -709,3 +709,53 @@ textarea {
     height: 50px;
     border-radius: 50%;
     background: rgba(59, 93, 80, 0.2); }
+/* ---------------Product------------------------------*/
+.product{
+  padding: 100px 0 0;
+}
+.product-top{
+  margin-bottom: 50px;
+}
+.product-top p {
+  font-family: var(--main-text-font);
+  margin: 0 12px;
+  font-size: 12px;
+}
+.product-left{
+  width: 20%;
+}
+.product-right{
+  width: 80%;
+}
+.product-right-top-item:first-child{
+  flex: 2;
+  font-size: 16px;
+  font-family: var(--main-text-font);
+  font-weight: bold;
+}
+.product-right-top-item{
+  flex: 1;
+  padding: 0 12px;
+}
+.product-right-top-item button{
+  width: 20%;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffff;
+  border: 1px solid #dddddd;
+  cursor: pointer;
+}
+.product-right-top-item select{
+  width: 20%;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffff;
+  border: 1px solid #dddddd;
+  cursor: pointer;
+}
+.product-right-content{
+  margin-top: 20px;
+  justify-content: space-between;
+}
