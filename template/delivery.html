@@ -76,7 +76,7 @@
 </div>
   <!------------------------------ Delivery --------------------------------------------------->
   <section class = "delivery">
-    <div class = "container">
+    <div class = "delivery-content">
       <div class = "delivery-top-wrap">
         <div class = "delivery-top">
           <div class = "delivery-top-delivery delivery-top-item">
@@ -100,20 +100,30 @@
         <div class = "delivery-content"></div>
         <!-- Cột trái -->
         <div class="delivery-content-left" style="flex: 1; max-width: 70%;">
-          <p>Vui lòng chọn địa chỉ giao hàng</p>
-          <div class="delivery-content-left-login row">
+          <p>
             <i class="fa-solid fa-right-to-bracket"></i>
-            <p>Đăng nhập (Nếu bạn đã có tài khoản TV)</p>
+            Vui lòng chọn địa chỉ giao hàng
+          </p>
+          <div class="delivery-content-left-login row">
+            <label>
+              <input type="radio" name="delivery" value="express">
+              <span style = "font-weight: bold">Đăng nhập</span>(Nếu đã có tài khoản của TV)
+            </label>
           </div>
 
+
           <div class="delivery-content-left-customer row">
-            <input checked name="typeCustomer" type="radio">
-            <p><span style = "font-weight: bold">Khách lẻ</span>(Nếu bạn muốn lưu lại thông tin)</p>
+            <label>
+              <input type="radio" name="delivery" value="express">
+              <span style = "font-weight: bold">Khách lẻ</span>(Nếu bạn muốn lưu lại thông tin)
+            </label>
           </div>
 
           <div class = "delivery-content-left-register row">
-            <input name="typeCustomer" type="radio">
-            <p><span style = "font-weight: bold">Đăng ký</span>(Tạo tài khoản với thông tin bên dưới)</p>
+            <label>
+              <input type="radio" name="delivery" value="express">
+              <span style = "font-weight: bold">Đăng ký</span>(Tạo mới tài khoản với thông tin bên dưới)
+            </label>
           </div>
 
           <div class = "delivery-content-left-input-top row">
@@ -141,14 +151,6 @@
             <label for = "">Địa chỉ<span style="color:red">*</span></label>
             <input type = "text">
           </div>
-
-          <div class = "delivery-content-left-button now">
-            <a href=""><span>&#171;</span><p>Quay lại giỏ hàng</p></a>
-            <button><p style = "font-weight: bold">THANH TOÁN VÀ GIAO HÀNG</p></button>
-
-          </div>
-
-
         </div>
 
 
@@ -198,7 +200,13 @@
 
         </div>
         </div>
-        </div>
+      <div class = "delivery-content-left-button now">
+        <a href=""><span>&#171;</span><p>Quay lại giỏ hàng</p></a>
+        <button><p style = "font-weight: bold">THANH TOÁN VÀ GIAO HÀNG</p></button>
+
+      </div>
+
+    </div>
   </section>
   <!-- End Delivery -->
 
