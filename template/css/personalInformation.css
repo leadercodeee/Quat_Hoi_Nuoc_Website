@@ -45,7 +45,7 @@ label {
 
 
 
-input[type="text"], input[type="email"], input[type="password"] {
+input[type="text"], input[type="email"] {
     padding: 10px;
     font-size: 16px;
     margin-bottom: 15px;
@@ -57,7 +57,7 @@ input[type="text"], input[type="email"], input[type="password"] {
 button {
     padding: 10px;
     font-size: 16px;
-    background-color: #4CAF50;
+    background-color: #1E91F6;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -71,7 +71,8 @@ button:disabled {
 }
 
 button:hover:enabled {
-    background-color: #45a049;
+    background-color: #1277d0;
+    box-shadow: 0 8px 24px hsla(208, 92%, 32%, .3);
 }
 
 .hidden {
@@ -85,11 +86,11 @@ button:hover:enabled {
 }
 .avatar-container {
     position: relative;
-    width: 168px;
-    height: 168px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     overflow: hidden;
-    background-color: #e0e0e0; /* Màu nền cho avatar khi không có ảnh */
+    background-color: #e0e0e0;
 }
 
 /* Ảnh đại diện */
@@ -121,4 +122,49 @@ button:hover:enabled {
 
 .camera-button:hover {
     background-color: rgba(0, 0, 0, 0.8);
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 2px;
+}
+.eye-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 8px;
+    color: #333;
+}
+
+.password-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.password-container input {
+    width: 100%;
+    padding: 20px 160px;
+    height: 40px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.eye-icon {
+    position: absolute;
+    margin-bottom: 10px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #333;
+    
+}
+#password{
+    padding-left: 10px;
+
 }

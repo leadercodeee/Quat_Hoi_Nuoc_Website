@@ -1,0 +1,101 @@
+/* Toàn bộ container */
+.container {
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+/* Tiêu đề */
+h2 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Đoạn văn hướng dẫn */
+p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Ô nhập mã */
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Nút "Tiếp tục" */
+button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Liên kết quay lại */
+a.back-to-login {
+    display: block;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+a.back-to-login:hover {
+    text-decoration: underline;
+}
+
+/* Thông báo lỗi */
+#errorMessage {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+    display: none; /* Mặc định ẩn */
+    text-align: left;
+}
+/* Container của ô mật khẩu và biểu tượng */
+.password-container {
+    position: relative;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+/* Ô nhập mật khẩu */
+.password-container input[type="password"] {
+    width: 100%;
+    padding: 12px 40px 12px 12px; /* Chừa khoảng trống cho biểu tượng */
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Biểu tượng con mắt */
+.toggle-password {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 18px;
+    color: #333;
+}
+
+.toggle-password:hover {
+    color: #007bff;
+}

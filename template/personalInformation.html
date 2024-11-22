@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chỉnh Sửa Trang Cá Nhân</title>
-    <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="css/personalInformation.css">
 </head>
 <body>
     <div class="container">
@@ -22,21 +22,25 @@
             <input type="text" id="name" name="name" required placeholder="Nhập tên của bạn">
 
             <label for="email">Địa chỉ Email</label>
-            <input type="email" id="email" name="email" required placeholder="Nhập email của bạn">
-
+            <input type="text" id="email" name="email" required placeholder="Nhập email của bạn">
+          
             <label for="password">Mật Khẩu Mới</label>
-            <input type="password" id="password" name="password" placeholder="Nhập mật khẩu mới">
+            <div class="password-container">
+                <input type="password" id="password" name="password" placeholder="Nhập mật khẩu mới">
+                <span id="togglePassword" class="eye-icon">👁️</span>
+            </div>
+
 
             <label for="acceptTerms">
                 <input type="checkbox" id="acceptTerms" name="acceptTerms" required>
                 Tôi đồng ý với các <a href="#">Điều khoản và Điều kiện</a>
             </label>
 
-            <button type="submit" id="submitButton" disabled>Lưu Thay Đổi</button>
+            <button onclick="window.location.href='index.html'" type="submit"  id="submitButton" disabled>Lưu Thay Đổi</button>
         </form>
         <p id="confirmationMessage" class="hidden">Thông tin đã được cập nhật!</p>
     </div>
 
-    <script src="js/script.js"></script>
+    <script src="js/personalInformation.js"></script>
 </body>
 </html>
