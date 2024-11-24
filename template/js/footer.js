@@ -9,7 +9,7 @@ footer.innerHTML = `   <div class="container relative">
                     src="images/envelope-outline.svg"
                     alt="Image"
                     class="img-fluid" /></span
-                ><span>Subscribe to Newsletter</span>
+                ><span>Đăng ký nhận thư</span>
               </h3>
 
               <form action="#" class="row g-3">
@@ -17,14 +17,14 @@ footer.innerHTML = `   <div class="container relative">
                   <input
                     type="text"
                     class="form-control"
-                    placeholder="Enter your name"
+                    placeholder="Họ và tên"
                   />
                 </div>
                 <div class="col-auto">
                   <input
                     type="email"
                     class="form-control"
-                    placeholder="Enter your email"
+                    placeholder="Địa chỉ email"
                   />
                 </div>
                 <div class="col-auto">
@@ -43,9 +43,7 @@ footer.innerHTML = `   <div class="container relative">
               <a href="#" class="footer-logo">Furni<span>.</span></a>
             </div>
             <p class="mb-4">
-              Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio
-              quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam
-              vulputate velit imperdiet dolor tempor tristique. Pellentesque
+            Chúng tôi cung cấp những chiếc quạt hơi nước tiết kiệm năng lượng và hiệu quả, giúp bạn tận hưởng không khí mát mẻ và trong lành trong những ngày hè oi ả. Với thiết kế hiện đại, đa dạng mẫu mã và giá cả hợp lý, Funi cam kết mang đến cho bạn những sản phẩm tốt nhất, phục vụ nhu cầu làm mát mọi gia đình và văn phòng.
               habitant
             </p>
 
@@ -69,37 +67,26 @@ footer.innerHTML = `   <div class="container relative">
             <div class="row links-wrap">
               <div class="col-6 col-sm-6 col-md-3">
                 <ul class="list-unstyled">
-                  <li><a href="#">About us</a></li>
-                  <li><a href="#">Services</a></li>
-                  <li><a href="#">Blog</a></li>
-                  <li><a href="#">Contact us</a></li>
+                  <li><a href="#">Về chúng tôi</a></li>
+                  <li><a href="#">Dịch vụ</a></li>
+                  <li><a href="#">Liên hệ</a></li>
                 </ul>
               </div>
 
               <div class="col-6 col-sm-6 col-md-3">
                 <ul class="list-unstyled">
-                  <li><a href="#">Support</a></li>
-                  <li><a href="#">Knowledge base</a></li>
-                  <li><a href="#">Live chat</a></li>
+                  <li><a href="support.html">Hỗ trợ</a></li>
+                  <li><a href="knowledgebase.html">Kiến thức cơ bản</a></li>
                 </ul>
               </div>
 
               <div class="col-6 col-sm-6 col-md-3">
                 <ul class="list-unstyled">
-                  <li><a href="#">Jobs</a></li>
-                  <li><a href="#">Our team</a></li>
-                  <li><a href="#">Leadership</a></li>
-                  <li><a href="#">Privacy Policy</a></li>
+                  <li><a href="privacy_policy.html">Chính sách bảo mật</a></li>
                 </ul>
               </div>
 
-              <div class="col-6 col-sm-6 col-md-3">
-                <ul class="list-unstyled">
-                  <li><a href="#">Nordic Chair</a></li>
-                  <li><a href="#">Kruzo Aero</a></li>
-                  <li><a href="#">Ergonomic Chair</a></li>
-                </ul>
-              </div>
+        
             </div>
           </div>
         </div>
@@ -108,21 +95,14 @@ footer.innerHTML = `   <div class="container relative">
           <div class="row pt-4">
             <div class="col-lg-6">
               <p class="mb-2 text-center text-lg-start">
-                Copyright &copy;
-                <script>
-                  document.write(new Date().getFullYear())
-                </script>
-                . All Rights Reserved. &mdash; Designed with love by
-                <a href="https://untree.co">Untree.co</a> Distributed By
-                <a hreff="https://themewagon.com">ThemeWagon</a>
-                <!-- License information: https://untree.co/license/ -->
+              © 2024 Furni. Bảo lưu tất cả quyền sở hữu. Được thiết kế và phát triển bởi Furni.
               </p>
             </div>
 
             <div class="col-lg-6 text-center text-lg-end">
               <ul class="list-unstyled d-inline-flex ms-auto">
-                <li class="me-4"><a href="#">Terms &amp; Conditions</a></li>
-                <li><a href="#">Privacy Policy</a></li>
+                <li class="me-4"><a href="#">Điều khoản sử dụng</a></li>
+                <li><a href="#">Chính sách bảo mật</a></li>
               </ul>
             </div>
           </div>
