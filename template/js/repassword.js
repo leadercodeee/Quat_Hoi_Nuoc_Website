@@ -42,8 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Chuyển đổi kiểu hiển thị
         passwordInput.type = isPasswordVisible ? 'password' : 'text';
 
-        // Cập nhật biểu tượng
-        togglePassword.textContent = isPasswordVisible ? '👁️' : '🙈';
+        
     });
 });
 
