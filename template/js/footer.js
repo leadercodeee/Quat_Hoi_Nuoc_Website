@@ -67,9 +67,9 @@ footer.innerHTML = `   <div class="container relative">
             <div class="row links-wrap">
               <div class="col-6 col-sm-6 col-md-3">
                 <ul class="list-unstyled">
-                  <li><a href="#">Về chúng tôi</a></li>
-                  <li><a href="#">Dịch vụ</a></li>
-                  <li><a href="#">Liên hệ</a></li>
+                  <li><a href="about.html">Về chúng tôi</a></li>
+                  <li><a href="services.html">Dịch vụ</a></li>
+                  <li><a href="contact.html">Liên hệ</a></li>
                 </ul>
               </div>
 
@@ -83,6 +83,7 @@ footer.innerHTML = `   <div class="container relative">
               <div class="col-6 col-sm-6 col-md-3">
                 <ul class="list-unstyled">
                   <li><a href="privacy_policy.html">Chính sách bảo mật</a></li>
+                     <li><a href="terms.html">Điều khoản sử dụng</a></li>
                 </ul>
               </div>
 
@@ -101,8 +102,8 @@ footer.innerHTML = `   <div class="container relative">
 
             <div class="col-lg-6 text-center text-lg-end">
               <ul class="list-unstyled d-inline-flex ms-auto">
-                <li class="me-4"><a href="#">Điều khoản sử dụng</a></li>
-                <li><a href="#">Chính sách bảo mật</a></li>
+                <li class="me-4"><a href="privacy_policy.html">Điều khoản sử dụng</a></li>
+                <li><a href="terms.html">Chính sách bảo mật</a></li>
               </ul>
             </div>
           </div>
