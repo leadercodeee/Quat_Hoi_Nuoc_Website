@@ -1,31 +1,23 @@
-// Lấy các phần tử từ DOM
-const emailInput = document.getElementById('email');
-const form = document.querySelector('form');
+// DOM Elements
+const form = document.querySelector("form");
+const emailInput = document.getElementById("email");
 
-// Kiểm tra tính hợp lệ của email hoặc số điện thoại
-form.addEventListener('submit', (event) => {
-    const inputValue = emailInput.value.trim();
+// Thêm sự kiện submit cho form
+form.addEventListener("submit", function (event) {
+    event.preventDefault(); // Ngăn form gửi dữ liệu tự động
 
-    // Kiểm tra nếu trường email/số điện thoại bị trống
-    if (!inputValue) {
-        event.preventDefault();
-        alert('Vui lòng nhập email hoặc số điện thoại!');
-        return;
+    const emailValue = emailInput.value.trim();
+
+    // Kiểm tra định dạng email hoặc số điện thoại
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Định dạng email
+    const phonePattern = /^[0-9]{10,15}$/; // Định dạng số điện thoại (10-15 chữ số)
+
+    if (emailPattern.test(emailValue) || phonePattern.test(emailValue)) {
+        // Nếu dữ liệu hợp lệ, chuyển hướng đến trang recode.html
+        alert("Tìm kiếm thành công! Đang chuyển đến trang đặt lại mật khẩu...");
+        window.location.href = "recode.html";
+    } else {
+        // Nếu dữ liệu không hợp lệ, hiển thị thông báo lỗi
+        alert("Vui lòng nhập email hoặc số điện thoại hợp lệ!");
     }
-
-    // Biểu thức kiểm tra email hợp lệ
-    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-    // Biểu thức kiểm tra số điện thoại hợp lệ (10 chữ số)
-    const phonePattern = /^\d{10}$/;
-
-    // Nếu không khớp với email hoặc số điện thoại, báo lỗi
-    if (!emailPattern.test(inputValue) && !phonePattern.test(inputValue)) {
-        event.preventDefault();
-        alert('Vui lòng nhập một email hợp lệ hoặc số điện thoại 10 chữ số!');
-        return;
-    }
-
-    // Nếu hợp lệ, tiếp tục gửi form
-    alert('Yêu cầu đang được xử lý...');
 });

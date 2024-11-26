@@ -39,8 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Kiểm tra trạng thái hiển thị mật khẩu
         const isPasswordVisible = passwordInput.type === 'text';
 
-        // Chuyển đổi kiểu hiển thị
-        passwordInput.type = isPasswordVisible ? 'password' : 'text';
+       
 
         
     });
