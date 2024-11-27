@@ -970,7 +970,7 @@ textarea {
 .category-right-bottom {
   justify-content: space-between;
   margin: 30px 0 20px;
-  width: 50%;
+  width: 100%;
 }
 .category-right-bottom p {
   font-family: var(--main-text-font);
